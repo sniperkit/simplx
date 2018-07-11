@@ -4,7 +4,6 @@ set (TARGET_NAME engine)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../include)
 
-
 if ("${CMAKE_CXX_FLAGS}" STREQUAL "--std=c++")
     # user-defined C++ version
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
@@ -26,5 +25,3 @@ FILE(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOUR
 add_library(engine STATIC ${SOURCE_FILES})
 
 target_include_directories(${TARGET_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/../../include )
-
-

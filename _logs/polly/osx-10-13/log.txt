@@ -1,0 +1,1222 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "--version"
+cmake version 3.11.4
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13`
+  `-GXcode`
+  `-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/osx-10-13.cmake`
+  `-DCMAKE_VERBOSE_MAKEFILE=ON`
+  `-DPOLLY_STATUS_DEBUG=ON`
+  `-DHUNTER_STATUS_DEBUG=ON`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "-H." "-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/osx-10-13.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON"
+-- [hunter *** DEBUG *** 2018-07-11T11:39:15] HUNTER_ROOT detected by environment variable
+-- [hunter *** DEBUG *** 2018-07-11T11:39:15] HUNTER_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:39:15] Settings (initialize):
+-- [hunter *** DEBUG *** 2018-07-11T11:39:15]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:39:15]   Cache init (NO)
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [polly *** DEBUG ***] Used tag: osx-10-13
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX is empty
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX set to 'd'
+-- [polly *** DEBUG ***] Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- [polly *** DEBUG ***] Developer root: /Applications/Xcode.app/Contents/Developer
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] Multi-configuration generator
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] Using default cache server
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] List of cache servers:
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] Settings (finalize):
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   Cache init (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   HUNTER_GATE_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter *** DEBUG *** 2018-07-11T11:39:37] [/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/_3rdParty/Hunter/toolchain] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/_3rdParty/Hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/osx-10-13.cmake" "-DHUNTER_SELF=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter" "-GXcode" "-H/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/_3rdParty/Hunter/toolchain" "-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/_3rdParty/Hunter/toolchain/_builds" "-DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild" "-DCMAKE_RELEASE_POSTFIX=" "-DCMAKE_DEBUG_POSTFIX=d"
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/_3rdParty/Hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Toolchain info: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/toolchain.info
+-- [hunter *** DEBUG *** 2018-07-11T11:39:57] Toolchain SHA1: d501edee07ba3f53c42ac9fd3ab5ee9fbac25566
+-- [hunter] Calculating Config-SHA1
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Config: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/config.cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Config sha1: a915afa8c479729ff63f9d9f86a8dd045b654a1f
+-- [hunter] HUNTER_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] HUNTER_TOOLCHAIN_ID_PATH: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] HUNTER_CONFIGURATION_TYPES: Release;Debug
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] HUNTER_BUILD_SHARED_LIBS:
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: d501ede | Config-ID: a915afa ]
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_SIZEOF_DATA_PTR = 8
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_COMPILER_ABI =
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_IMPLICIT_LINK_LIBRARIES =
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_IMPLICIT_LINK_DIRECTORIES = /usr/local/opt/openssl/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_LIBRARY_ARCHITECTURE =
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_C_ABI_COMPILED = TRUE
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_SIZEOF_DATA_PTR = 8
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_COMPILER_ABI =
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_LIBRARIES = c++
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES = /usr/local/opt/openssl/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_LIBRARY_ARCHITECTURE =
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] ABI forwarding: CMAKE_CXX_ABI_COMPILED = TRUE
+-- [hunter *** DEBUG *** 2018-07-11T11:39:58] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/check_ci_tag/hunter.cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] check_ci_tag versions available: [1.0.0]
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Install to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install
+-- [hunter] CHECK_CI_TAG_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install (ver.: 1.0.0)
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Default arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] User arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Already locked: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Using environment variable HOME
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59] Downloading DONE metafile (try #0 of 10):
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59]   https://raw.githubusercontent.com/ingenue/hunter-cache/master/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:39:59]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:40:00] File not found
+-- [hunter *** DEBUG *** 2018-07-11T11:40:00] Downloading DONE metafile (try #1 of 10):
+-- [hunter *** DEBUG *** 2018-07-11T11:40:00]   https://raw.githubusercontent.com/ingenue/hunter-cache/master/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:40:00]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] File not found
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Cache miss (no basic dependencies info found: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/basic-deps.DONE)
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Keep package sources: OFF
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Number of physical cores: 2
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Number of logical cores: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Number of jobs: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] HUNTER_JOBS_NUMBER:
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] HUNTER_JOBS_OPTION: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Add package: check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Download scheme: url_sha1_cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Url: https://github.com/hunter-packages/check_ci_tag/archive/v1.0.0.tar.gz
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] SHA1: f220960c1174cda57a50a71d6037ca1c4fbbe796
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Configuration types: Release;Debug
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] HUNTER_TLS_VERIFY: ON
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] Scheme file used: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/schemes/url_sha1_cmake.cmake.in
+-- [hunter] Building check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:40:01] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake" "-C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake" "-H/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag" "-B/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/toolchain.cmake" "-GXcode" "-DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild"
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2018-07-11T11:40:18] Scheme: url_sha1_cmake
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build
+-- [hunter *** DEBUG *** 2018-07-11T11:40:18] Configure step successful (dir: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag)
+-- [hunter *** DEBUG *** 2018-07-11T11:40:18] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "--build" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build"
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-25B974884EF94528A992EA7B.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-25B974884EF94528A992EA7B.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/ZERO_CHECK.build/Script-25B974884EF94528A992EA7B.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-25B974884EF94528A992EA7B.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeScripts/ReRunCMake.make
+make[1]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET check_ci_tag-Release OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Release.build/Script-2386E175FB4B411DBCABA81C.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Release.build/Script-2386E175FB4B411DBCABA81C.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/check_ci_tag-Release.build/Script-2386E175FB4B411DBCABA81C.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Release.build/Script-2386E175FB4B411DBCABA81C.sh
+echo "Creating directories for 'check_ci_tag-Release'"
+Creating directories for 'check_ci_tag-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/tmp
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-mkdir
+echo "Performing download step (download, verify and extract) for 'check_ci_tag-Release'"
+Performing download step (download, verify and extract) for 'check_ci_tag-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/download-check_ci_tag-Release.cmake
+-- Downloading...
+   dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/hunter-packages/check_ci_tag/archive/v1.0.0.tar.gz'
+-- verifying file...
+       file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+-- Downloading... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/verify-check_ci_tag-Release.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/extract-check_ci_tag-Release.cmake
+-- extracting...
+     src='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+     dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-download
+echo "No update step for 'check_ci_tag-Release'"
+No update step for 'check_ci_tag-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-update
+echo "No patch step for 'check_ci_tag-Release'"
+No patch step for 'check_ci_tag-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-patch
+echo "Performing configure step for 'check_ci_tag-Release'"
+Performing configure step for 'check_ci_tag-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -GXcode -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake -DCMAKE_RELEASE_POSTFIX= -DCMAKE_CONFIGURATION_TYPES=Release -DCMAKE_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install -DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/toolchain.cmake -DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild -GXcode /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Hunter detected. Parent project: check_ci_tag;. Skipping tag check.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-configure
+echo "Performing build step for 'check_ci_tag-Release'"
+Performing build step for 'check_ci_tag-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --config Release -- -jobs 4
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 4
+
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+Build Preparation
+Build task concurrency set to 4 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT check_ci_tag WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT check_ci_tag WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-build
+echo "Performing install step for 'check_ci_tag-Release'"
+Performing install step for 'check_ci_tag-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --target install --config Release
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT check_ci_tag WITH CONFIGURATION Release ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ZERO_CHECK.build/Script-EAE73BF381324732B4775F24.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT check_ci_tag WITH CONFIGURATION Release ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/ALL_BUILD.build/Script-DC47898BDAC94C899984CB10.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+=== BUILD AGGREGATE TARGET install OF PROJECT check_ci_tag WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/install.build/Script-DF99F028DFCA4F8DB427D1A6.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/install.build/Script-DF99F028DFCA4F8DB427D1A6.sh
+
+PhaseScriptExecution CMake\ PostBuild\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/install.build/Script-DF99F028DFCA4F8DB427D1A6.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build/check_ci_tag.build/Release/install.build/Script-DF99F028DFCA4F8DB427D1A6.sh
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -DBUILD_TYPE=Release -P cmake_install.cmake
+-- Install configuration: "Release"
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/cmake/module/check_ci_tag.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/lib/cmake/check_ci_tag/check_ci_tagConfig.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/lib/cmake/check_ci_tag/check_ci_tagConfigVersion.cmake
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake -Dsrcdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source -Ddstdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/licenses/check_ci_tag -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/try-copy-license.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-install
+echo "Completed 'check_ci_tag-Release'"
+Completed 'check_ci_tag-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeFiles/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeFiles/Debug/check_ci_tag-Release-complete
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-done
+
+=== BUILD AGGREGATE TARGET check_ci_tag-Debug OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Debug.build/Script-4A11A7B3575F48E49228F34D.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Debug.build/Script-4A11A7B3575F48E49228F34D.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/check_ci_tag-Debug.build/Script-4A11A7B3575F48E49228F34D.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/check_ci_tag-Debug.build/Script-4A11A7B3575F48E49228F34D.sh
+echo "Creating directories for 'check_ci_tag-Debug'"
+Creating directories for 'check_ci_tag-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/tmp
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-mkdir
+echo "Performing download step (download, verify and extract) for 'check_ci_tag-Debug'"
+Performing download step (download, verify and extract) for 'check_ci_tag-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/download-check_ci_tag-Debug.cmake
+-- verifying file...
+       file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+  SHA1='f220960c1174cda57a50a71d6037ca1c4fbbe796'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/verify-check_ci_tag-Debug.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/extract-check_ci_tag-Debug.cmake
+-- extracting...
+     src='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/check_ci_tag/1.0.0/f220960/v1.0.0.tar.gz'
+     dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-download
+echo "No update step for 'check_ci_tag-Debug'"
+No update step for 'check_ci_tag-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-update
+echo "No patch step for 'check_ci_tag-Debug'"
+No patch step for 'check_ci_tag-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-patch
+echo "Performing configure step for 'check_ci_tag-Debug'"
+Performing configure step for 'check_ci_tag-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -GXcode -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_CONFIGURATION_TYPES=Debug -DCMAKE_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install -DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/toolchain.cmake -DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild -GXcode /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Hunter detected. Parent project: check_ci_tag;. Skipping tag check.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-configure
+echo "Performing build step for 'check_ci_tag-Debug'"
+Performing build step for 'check_ci_tag-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --config Debug -- -jobs 4
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 4
+
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+Build Preparation
+Build task concurrency set to 4 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT check_ci_tag WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT check_ci_tag WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-build
+echo "Performing install step for 'check_ci_tag-Debug'"
+Performing install step for 'check_ci_tag-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --target install --config Debug
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT check_ci_tag WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ZERO_CHECK.build/Script-3BD565A592024693AC64279D.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT check_ci_tag WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/ALL_BUILD.build/Script-39054624941A47BA95F14233.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+=== BUILD AGGREGATE TARGET install OF PROJECT check_ci_tag WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/install.build/Script-F2310610B553471CA16644C4.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/install.build/Script-F2310610B553471CA16644C4.sh
+
+PhaseScriptExecution CMake\ PostBuild\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/install.build/Script-F2310610B553471CA16644C4.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build/check_ci_tag.build/Debug/install.build/Script-F2310610B553471CA16644C4.sh
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -DBUILD_TYPE=Debug -P cmake_install.cmake
+-- Install configuration: "Debug"
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/cmake/module/check_ci_tag.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/lib/cmake/check_ci_tag/check_ci_tagConfig.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/lib/cmake/check_ci_tag/check_ci_tagConfigVersion.cmake
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake -Dsrcdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Source -Ddstdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install/licenses/check_ci_tag -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/try-copy-license.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/args.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-install
+echo "Completed 'check_ci_tag-Debug'"
+Completed 'check_ci_tag-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeFiles/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/CMakeFiles/Debug/check_ci_tag-Debug-complete
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-done
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ALL_BUILD.build/Script-677ABBD77EF74C6583602BBE.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ALL_BUILD.build/Script-677ABBD77EF74C6583602BBE.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/ALL_BUILD.build/Script-677ABBD77EF74C6583602BBE.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/Hunter.build/Debug/ALL_BUILD.build/Script-677ABBD77EF74C6583602BBE.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+-- [hunter] Build step successful (dir: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag)
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Try to find stamps in directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Stamp 'done' location: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Debug-prefix/src/check_ci_tag-Debug-stamp/Debug/check_ci_tag-Debug-done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Stamp 'done' location: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Build/check_ci_tag-Release-prefix/src/check_ci_tag-Release-stamp/Debug/check_ci_tag-Release-done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Saving to cache: check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/Install] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-E" "tar" "cvjf" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/cache.tar.bz2" "--" "cmake" "lib" "licenses"
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Packing successful: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/cache.tar.bz2
+-- [hunter] Cache saved: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/05dea37899ebadc15a7184590f6c864100ba3375.tar.bz2
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Unpacking to cellar:
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00]   /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/05dea37899ebadc15a7184590f6c864100ba3375.tar.bz2
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37/raw
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37/raw] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-E" "tar" "xvf" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/05dea37899ebadc15a7184590f6c864100ba3375.tar.bz2"
+x cmake/
+x cmake/module/
+x cmake/module/check_ci_tag.cmake
+x lib/
+x lib/cmake/
+x lib/cmake/check_ci_tag/
+x lib/cmake/check_ci_tag/check_ci_tagConfig.cmake
+x lib/cmake/check_ci_tag/check_ci_tagConfigVersion.cmake
+x licenses/
+x licenses/check_ci_tag/
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Unpacked successfully
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Creating list of files and directories
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Creating directories
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Removing old files
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Linking files
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-DHUNTER_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install" "-DLIST_OF_FILES=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37/files.list" "-DSHELL_LINK_SCRIPT=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37/link-all.sh" "-DCELLAR_RAW_DIRECTORY=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/05dea37899ebadc15a7184590f6c864100ba3375/05dea37/raw" "-DPYTHON_LINK_SCRIPT=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/link-all.py" "-P" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/link-all.cmake"
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Linking done: , Link files using Python: /usr/local/bin/python3
+
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Saving cache file: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/check_ci_tag/cache.sha1
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] No basic dependencies for package: check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] No dependencies for package: check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Cache directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Dependencies saved: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/check_ci_tag/1.0.0/f220960/da39a3e/a49b0e5/da39a3e/da39a3e/deps.info
+-- [hunter *** DEBUG *** 2018-07-11T11:41:00] Cleaning up build directories...
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Clean up done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/check_ci_tag/hunter.cmake ... end
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/sugar/hunter.cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] sugar versions available: [1.3.0]
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Install to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install
+-- [hunter] SUGAR_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install (ver.: 1.3.0)
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Default arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] User arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Already locked: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Using environment variable HOME
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Downloading DONE metafile (try #0 of 10):
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01]   https://raw.githubusercontent.com/ingenue/hunter-cache/master/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] File not found
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01] Downloading DONE metafile (try #1 of 10):
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01]   https://raw.githubusercontent.com/ingenue/hunter-cache/master/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:41:01]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] File not found
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Cache miss (no basic dependencies info found: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/basic-deps.DONE)
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Keep package sources: OFF
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Number of physical cores: 2
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Number of logical cores: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Number of jobs: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] HUNTER_JOBS_NUMBER:
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] HUNTER_JOBS_OPTION: 4
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Add package: sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Download scheme: url_sha1_cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Url: https://github.com/ruslo/sugar/archive/v1.3.0.tar.gz
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] SHA1: 155a48bbb588c34afc73dbc6ee87737b8f53f749
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Configuration types: Release;Debug
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] HUNTER_TLS_VERIFY: ON
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] Scheme file used: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/schemes/url_sha1_cmake.cmake.in
+-- [hunter] Building sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:41:02] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake" "-C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake" "-H/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar" "-B/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/toolchain.cmake" "-GXcode" "-DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild"
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2018-07-11T11:41:17] Scheme: url_sha1_cmake
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build
+-- [hunter *** DEBUG *** 2018-07-11T11:41:18] Configure step successful (dir: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar)
+-- [hunter *** DEBUG *** 2018-07-11T11:41:18] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "--build" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build"
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-3650EC764FDE41AE974EDEF6.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-3650EC764FDE41AE974EDEF6.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/ZERO_CHECK.build/Script-3650EC764FDE41AE974EDEF6.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ZERO_CHECK.build/Script-3650EC764FDE41AE974EDEF6.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeScripts/ReRunCMake.make
+make[1]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET sugar-Release OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Release.build/Script-3E161D03EA1740BA95EDE8CE.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Release.build/Script-3E161D03EA1740BA95EDE8CE.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/sugar-Release.build/Script-3E161D03EA1740BA95EDE8CE.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Release.build/Script-3E161D03EA1740BA95EDE8CE.sh
+echo "Creating directories for 'sugar-Release'"
+Creating directories for 'sugar-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/tmp
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-mkdir
+echo "Performing download step (download, verify and extract) for 'sugar-Release'"
+Performing download step (download, verify and extract) for 'sugar-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/download-sugar-Release.cmake
+-- Downloading...
+   dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/ruslo/sugar/archive/v1.3.0.tar.gz'
+-- verifying file...
+       file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+-- Downloading... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/verify-sugar-Release.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/extract-sugar-Release.cmake
+-- extracting...
+     src='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+     dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-download
+echo "No update step for 'sugar-Release'"
+No update step for 'sugar-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-update
+echo "No patch step for 'sugar-Release'"
+No patch step for 'sugar-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-patch
+echo "Performing configure step for 'sugar-Release'"
+Performing configure step for 'sugar-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -GXcode -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake -DCMAKE_RELEASE_POSTFIX= -DCMAKE_CONFIGURATION_TYPES=Release -DCMAKE_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install -DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/toolchain.cmake -DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild -GXcode /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-configure
+echo "Performing build step for 'sugar-Release'"
+Performing build step for 'sugar-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --config Release -- -jobs 4
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 4
+
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+Build Preparation
+Build task concurrency set to 4 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT sugar WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT sugar WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-build
+echo "Performing install step for 'sugar-Release'"
+Performing install step for 'sugar-Release'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --target install --config Release
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT sugar WITH CONFIGURATION Release ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ZERO_CHECK.build/Script-D9378823AF2544BF8C60B167.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT sugar WITH CONFIGURATION Release ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/ALL_BUILD.build/Script-9CBEF5ED1E3D4DD794185160.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+=== BUILD AGGREGATE TARGET install OF PROJECT sugar WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/install.build/Script-D3C8894A7E534E3D8AA24B71.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/install.build/Script-D3C8894A7E534E3D8AA24B71.sh
+
+PhaseScriptExecution CMake\ PostBuild\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/install.build/Script-D3C8894A7E534E3D8AA24B71.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build/sugar.build/Release/install.build/Script-D3C8894A7E534E3D8AA24B71.sh
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -DBUILD_TYPE=Release -P cmake_install.cmake
+-- Install configuration: "Release"
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_files.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_include.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_ios_gtest.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_get_WIN32_WINNT.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_gtest.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_groups_generate.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_link_timestamp.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_flags.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_doxygen_generate.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_this_to_sourcelist.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_status_print.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_fatal_error.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_status_debug.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_execute_process.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_find_python3.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_xcode_attr_by_name.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_file_exists.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_target_exists.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_check_no_duplicates.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_warning_unpack_one.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_get_all_xcode_warning_attrs.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_echo_target_property.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_flag_by_name.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_improper_number_of_arguments.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_echo_target.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_expected_number_of_arguments.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_directory_exists.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_variable_not_empty.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/lib/cmake/sugar/sugarConfig.cmake
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake -Dsrcdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source -Ddstdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/licenses/sugar -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/try-copy-license.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-install
+echo "Completed 'sugar-Release'"
+Completed 'sugar-Release'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeFiles/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeFiles/Debug/sugar-Release-complete
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-done
+
+=== BUILD AGGREGATE TARGET sugar-Debug OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Debug.build/Script-41EA15A379254751A6A81C90.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Debug.build/Script-41EA15A379254751A6A81C90.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/sugar-Debug.build/Script-41EA15A379254751A6A81C90.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/sugar-Debug.build/Script-41EA15A379254751A6A81C90.sh
+echo "Creating directories for 'sugar-Debug'"
+Creating directories for 'sugar-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/tmp
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-mkdir
+echo "Performing download step (download, verify and extract) for 'sugar-Debug'"
+Performing download step (download, verify and extract) for 'sugar-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/download-sugar-Debug.cmake
+-- verifying file...
+       file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+  SHA1='155a48bbb588c34afc73dbc6ee87737b8f53f749'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/verify-sugar-Debug.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/extract-sugar-Debug.cmake
+-- extracting...
+     src='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Download/sugar/1.3.0/155a48b/v1.3.0.tar.gz'
+     dst='/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-download
+echo "No update step for 'sugar-Debug'"
+No update step for 'sugar-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-update
+echo "No patch step for 'sugar-Debug'"
+No patch step for 'sugar-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-patch
+echo "Performing configure step for 'sugar-Debug'"
+Performing configure step for 'sugar-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -GXcode -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_CONFIGURATION_TYPES=Debug -DCMAKE_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install -DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/toolchain.cmake -DCMAKE_MAKE_PROGRAM=/usr/bin/xcodebuild -GXcode /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/cache.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake
+-- [polly] Used toolchain: Xcode (OS X 10.13) / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-configure
+echo "Performing build step for 'sugar-Debug'"
+Performing build step for 'sugar-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --config Debug -- -jobs 4
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 4
+
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+Build Preparation
+Build task concurrency set to 4 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT sugar WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT sugar WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-build
+echo "Performing install step for 'sugar-Debug'"
+Performing install step for 'sugar-Debug'
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake --build . --target install --config Debug
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT sugar WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ZERO_CHECK.build/Script-C4B4DE92D7B84B51807BD821.sh
+echo ""
+
+make -f /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT sugar WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+PhaseScriptExecution CMake\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/ALL_BUILD.build/Script-D8E5A2915B324951955A6D80.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+=== BUILD AGGREGATE TARGET install OF PROJECT sugar WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/install.build/Script-D7B838EDE9C4465584F036FE.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/install.build/Script-D7B838EDE9C4465584F036FE.sh
+
+PhaseScriptExecution CMake\ PostBuild\ Rules /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/install.build/Script-D7B838EDE9C4465584F036FE.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build/sugar.build/Debug/install.build/Script-D7B838EDE9C4465584F036FE.sh
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -DBUILD_TYPE=Debug -P cmake_install.cmake
+-- Install configuration: "Debug"
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_files.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_include.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_ios_gtest.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_get_WIN32_WINNT.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_gtest.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_groups_generate.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_link_timestamp.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_flags.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_doxygen_generate.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_add_this_to_sourcelist.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_status_print.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_fatal_error.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_status_debug.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_execute_process.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_find_python3.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_xcode_attr_by_name.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_file_exists.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_target_exists.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_check_no_duplicates.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_warning_unpack_one.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_get_all_xcode_warning_attrs.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_echo_target_property.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_generate_warning_flag_by_name.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_improper_number_of_arguments.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_echo_target.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_expected_number_of_arguments.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_directory_exists.cmake
+-- Up-to-date: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/cmake/module/sugar_test_variable_not_empty.cmake
+-- Installing: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/lib/cmake/sugar/sugarConfig.cmake
+
+** BUILD SUCCEEDED **
+
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -C/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake -Dsrcdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Source -Ddstdir=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install/licenses/sugar -P /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/try-copy-license.cmake
+loading initial cache file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/args.cmake
+cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-build && /usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-install
+echo "Completed 'sugar-Debug'"
+Completed 'sugar-Debug'
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E make_directory /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeFiles/Debug
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/CMakeFiles/Debug/sugar-Debug-complete
+/usr/local/Cellar/cmake/3.11.4/bin/cmake -E touch /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-done
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ALL_BUILD.build/Script-D61BE0BED1AA4481843189E4.sh
+chmod 0755 /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ALL_BUILD.build/Script-D61BE0BED1AA4481843189E4.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug/ALL_BUILD.build/Script-D61BE0BED1AA4481843189E4.sh
+    cd /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar
+    /bin/sh -c /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/Hunter.build/Debug/ALL_BUILD.build/Script-D61BE0BED1AA4481843189E4.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+-- [hunter] Build step successful (dir: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar)
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Try to find stamps in directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Stamp 'done' location: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Debug-prefix/src/sugar-Debug-stamp/Debug/sugar-Debug-done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Stamp 'done' location: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Build/sugar-Release-prefix/src/sugar-Release-stamp/Debug/sugar-Release-done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Saving to cache: sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/Install] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-E" "tar" "cvjf" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/cache.tar.bz2" "--" "cmake" "lib" "licenses"
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Packing successful: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/cache.tar.bz2
+-- [hunter] Cache saved: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73.tar.bz2
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Unpacking to cellar:
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00]   /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73.tar.bz2
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00]   -> /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd/raw
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd/raw] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-E" "tar" "xvf" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/raw/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73.tar.bz2"
+x cmake/
+x cmake/module/
+x cmake/module/sugar_execute_process.cmake
+x cmake/module/sugar_add_ios_gtest.cmake
+x cmake/module/sugar_find_python3.cmake
+x cmake/module/sugar_status_print.cmake
+x cmake/module/sugar_get_WIN32_WINNT.cmake
+x cmake/module/sugar_add_gtest.cmake
+x cmake/module/sugar_generate_warning_xcode_attr_by_name.cmake
+x cmake/module/sugar_fatal_error.cmake
+x cmake/module/sugar_files.cmake
+x cmake/module/sugar_test_file_exists.cmake
+x cmake/module/sugar_test_target_exists.cmake
+x cmake/module/sugar_check_no_duplicates.cmake
+x cmake/module/sugar_warning_unpack_one.cmake
+x cmake/module/sugar_get_all_xcode_warning_attrs.cmake
+x cmake/module/sugar_include.cmake
+x cmake/module/sugar_echo_target_property.cmake
+x cmake/module/sugar_generate_warning_flag_by_name.cmake
+x cmake/module/sugar_improper_number_of_arguments.cmake
+x cmake/module/sugar_groups_generate.cmake
+x cmake/module/sugar_echo_target.cmake
+x cmake/module/sugar_link_timestamp.cmake
+x cmake/module/sugar_status_debug.cmake
+x cmake/module/sugar_expected_number_of_arguments.cmake
+x cmake/module/sugar_test_directory_exists.cmake
+x cmake/module/sugar_generate_warning_flags.cmake
+x cmake/module/sugar_doxygen_generate.cmake
+x cmake/module/sugar_add_this_to_sourcelist.cmake
+x cmake/module/sugar_test_variable_not_empty.cmake
+x lib/
+x lib/cmake/
+x lib/cmake/sugar/
+x lib/cmake/sugar/sugarConfig.cmake
+x licenses/
+x licenses/sugar/
+x licenses/sugar/LICENSE
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Unpacked successfully
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Creating list of files and directories
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Creating directories
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Removing old files
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Linking files
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] [/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-DHUNTER_INSTALL_PREFIX=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Install" "-DLIST_OF_FILES=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd/files.list" "-DSHELL_LINK_SCRIPT=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd/link-all.sh" "-DCELLAR_RAW_DIRECTORY=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cellar/b9cadfd4cd56a7c0f9c0746c9f25eec4b9220a73/b9cadfd/raw" "-DPYTHON_LINK_SCRIPT=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/link-all.py" "-P" "/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/scripts/link-all.cmake"
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Linking done: , Link files using Python: /usr/local/bin/python3
+
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Saving cache file: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/d501ede/a915afa/Build/sugar/cache.sha1
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] No basic dependencies for package: sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] No dependencies for package: sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Locking directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Lock done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Cache directory: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Dependencies saved: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/Cache/meta/d501ede/sugar/1.3.0/155a48b/da39a3e/a49b0e5/da39a3e/da39a3e/deps.info
+-- [hunter *** DEBUG *** 2018-07-11T11:42:00] Cleaning up build directories...
+-- [hunter *** DEBUG *** 2018-07-11T11:42:01] Clean up done
+-- [hunter *** DEBUG *** 2018-07-11T11:42:01] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/sugar/hunter.cmake ... end
+Linux  : 0
+Xcode  : 1
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CheckSymbolExists.cmake:59 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted variables like "x" will no longer be dereferenced when the policy is
+  set to NEW.  Since the policy is not set the OLD behavior will be used.
+Call Stack (most recent call first):
+  /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CheckSymbolExists.cmake:50 (__CHECK_SYMBOL_EXISTS_IMPL)
+  /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/FindThreads.cmake:134 (CHECK_SYMBOL_EXISTS)
+  CMakeLists.txt:46 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE
+> CMAKE_BUILD_TYPE = Debug
+CMake Error at CMakeLists.txt:68 (message):
+  unsupported C++ compiler AppleClang
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/osx-10-13/CMakeFiles/CMakeOutput.log".

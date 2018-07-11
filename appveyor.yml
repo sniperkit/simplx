@@ -1,0 +1,69 @@
+# Windows (https://github.com/travis-ci-tester/toolchain-table)
+
+image: Visual Studio 2015
+
+environment:
+  global:
+    GITHUB_USER_PASSWORD:
+      secure: dsmT+8X6Q2/QTMW+bZi2+RVJQXhdfl4/fQEbyuuaDYKlagnMCmfQqwuZkQlZgEnF
+
+  matrix:
+
+    - TOOLCHAIN: "vs-14-2015-sdk-8-1"
+      CONFIG: Release
+
+    - TOOLCHAIN: "vs-14-2015-sdk-8-1"
+      CONFIG: Debug
+
+    - TOOLCHAIN: "vs-14-2015-win64-sdk-8-1"
+      CONFIG: Release
+
+    - TOOLCHAIN: "vs-14-2015-win64-sdk-8-1"
+      CONFIG: Debug
+
+install:
+  # Python 3
+  - cmd: set PATH=C:\Python34-x64;C:\Python34-x64\Scripts;%PATH%
+
+  # Install Python package 'requests'
+  - cmd: pip install requests
+  - cmd: pip install gitpython
+
+  # Install latest Polly toolchains and scripts
+  - cmd: appveyor DownloadFile https://github.com/ruslo/polly/archive/master.zip
+  - cmd: 7z x master.zip
+  - cmd: set POLLY_SOURCE_DIR=%cd%\polly-master
+
+  # Install dependencies (CMake, Ninja)
+  - cmd: python %POLLY_SOURCE_DIR%\bin\install-ci-dependencies.py
+
+  # Tune locations
+  - cmd: set PATH=%cd%\_ci\cmake\bin;%PATH%
+  - cmd: set PATH=%cd%\_ci\ninja;%PATH%
+
+  # Add '--quiet' to avoid leaking the token to logs
+  - cmd: git submodule update --init --recursive --quiet
+
+  # Remove entry with sh.exe from PATH to fix error with MinGW toolchain
+  # (For MinGW make to work correctly sh.exe must NOT be in your path)
+  # * http://stackoverflow.com/a/3870338/2288008
+  - cmd: set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
+
+  # Save git.exe in HUNTER_GIT_EXECUTABLE for upload
+  # * https://docs.hunter.sh/en/latest/reference/user-variables.html#hunter-git-executable
+  # Variable will be used in CMake so it's okay to use Unix style '/'
+  - cmd: set HUNTER_GIT_EXECUTABLE=C:/Program Files/Git/bin/git.exe
+
+  # Use MinGW from Qt tools because version is higher
+  # * http://www.appveyor.com/docs/installed-software#qt
+  - cmd: set MINGW_PATH=C:\Qt\Tools\mingw492_32\bin
+
+  # MSYS2 location
+  - cmd: set MSYS_PATH=C:\msys64\usr\bin
+
+build_script:
+  - cmd: python %POLLY_SOURCE_DIR%\bin\polly.py --toolchain "%TOOLCHAIN%" --config "%CONFIG%" --verbose --fwd SIMPLX_BUILD_TESTS=ON
+
+branches:
+  except:
+    - /^pr\..*/

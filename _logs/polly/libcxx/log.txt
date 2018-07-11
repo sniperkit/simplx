@@ -1,0 +1,131 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "--version"
+cmake version 3.11.4
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/libcxx.cmake`
+  `-DCMAKE_VERBOSE_MAKEFILE=ON`
+  `-DPOLLY_STATUS_DEBUG=ON`
+  `-DHUNTER_STATUS_DEBUG=ON`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "-H." "-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/libcxx.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON"
+-- [hunter *** DEBUG *** 2018-07-11T11:47:36] HUNTER_ROOT detected by environment variable
+-- [hunter *** DEBUG *** 2018-07-11T11:47:36] HUNTER_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:47:36] Settings (initialize):
+-- [hunter *** DEBUG *** 2018-07-11T11:47:36]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:47:36]   Cache init (NO)
+-- [polly] Used toolchain: clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [polly *** DEBUG ***] Used tag: libcxx
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX is empty
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX set to 'd'
+-- [polly *** DEBUG ***] Developer root: /Applications/Xcode.app/Contents/Developer
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] Single-configuration generator
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] Using default cache server
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] List of cache servers:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] Settings (finalize):
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   Cache init (NO)
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   HUNTER_GATE_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter *** DEBUG *** 2018-07-11T11:47:40] [/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain] > "/usr/local/Cellar/cmake/3.11.4/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/libcxx.cmake" "-DHUNTER_SELF=/Users/lucmichalski/local/golang/src/github.com/ruslo/hunter" "-GUnix Makefiles" "-H/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain" "-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain/_builds" "-DCMAKE_MAKE_PROGRAM=/usr/bin/make" "-DCMAKE_RELEASE_POSTFIX=" "-DCMAKE_DEBUG_POSTFIX=d"
+-- [polly] Used toolchain: clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2018-07-11T11:47:44] Already exists: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0/toolchain.info
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter
+-- [hunter *** DEBUG *** 2018-07-11T11:47:44] HUNTER_TOOLCHAIN_ID_PATH: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0
+-- [hunter *** DEBUG *** 2018-07-11T11:47:44] HUNTER_CONFIGURATION_TYPES: Release;Debug
+-- [hunter *** DEBUG *** 2018-07-11T11:47:44] HUNTER_BUILD_SHARED_LIBS:
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 266bfd0 | Config-ID: dfe08be ]
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/check_ci_tag/hunter.cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] check_ci_tag versions available: [1.0.0]
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Install to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0/dfe08be/Install
+-- [hunter] CHECK_CI_TAG_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0/dfe08be/Install (ver.: 1.0.0)
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Default arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] User arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Package already installed: check_ci_tag
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/check_ci_tag/hunter.cmake ... end
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/sugar/hunter.cmake
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] sugar versions available: [1.3.0]
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Install to: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0/dfe08be/Install
+-- [hunter] SUGAR_ROOT: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/_Base/xxxxxxx/266bfd0/dfe08be/Install (ver.: 1.3.0)
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Default arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] User arguments:
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] Package already installed: sugar
+-- [hunter *** DEBUG *** 2018-07-11T11:47:45] load: /Users/lucmichalski/local/golang/src/github.com/ruslo/hunter/cmake/projects/sugar/hunter.cmake ... end
+Linux  : 0
+Xcode  :
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CheckSymbolExists.cmake:59 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted variables like "x" will no longer be dereferenced when the policy is
+  set to NEW.  Since the policy is not set the OLD behavior will be used.
+Call Stack (most recent call first):
+  /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CheckSymbolExists.cmake:50 (__CHECK_SYMBOL_EXISTS_IMPL)
+  /usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/FindThreads.cmake:134 (CHECK_SYMBOL_EXISTS)
+-- Looking for pthread_create
+  CMakeLists.txt:46 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for pthread_create - found
+-- Found Threads: TRUE
+> CMAKE_BUILD_TYPE = Debug
+CMake Error at CMakeLists.txt:68 (message):
+  unsupported C++ compiler AppleClang
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/CMakeFiles/CMakeOutput.log".

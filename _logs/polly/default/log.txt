@@ -1,0 +1,29 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "--version"
+cmake version 3.11.4
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/default.cmake`
+]
+[/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx]> "cmake" "-H." "-B/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/Users/lucmichalski/local/golang/src/github.com/ruslo/polly/default.cmake"
+CMake Error at cmake/HunterGate.cmake:1:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "HunterGate.cmake".
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (include)
+
+
+-- Configuring incomplete, errors occurred!
