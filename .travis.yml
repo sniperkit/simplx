@@ -22,11 +22,6 @@ addons:
     sources:
       - llvm-toolchain-trusty-5.0
     packages:
-      # For ogles_gpgpu (GL library)
-      - libgl1-mesa-dev
-      - libegl1-mesa-dev
-      - libosmesa6-dev      
-
       # clang 5
       - clang-5.0
 
@@ -51,26 +46,9 @@ matrix:
     - os: osx
       osx_image: xcode9.3
       env: >
-        TOOLCHAIN=ios-nocodesign-11-3-dep-9-3-arm64
-        CONFIG=Release
-        INSTALL=--install
-        MESA=OFF
-
-    - os: osx
-      osx_image: xcode9.3
-      env: >
         TOOLCHAIN=osx-10-13
         CONFIG=Release
         INSTALL=--install
-        MESA=OFF
-
-    - os: osx
-      osx_image: xcode9.3
-      env: >
-        TOOLCHAIN=android-ndk-r17-api-19-armeabi-v7a-neon-clang-libcxx
-        CONFIG=Release
-        INSTALL=--install
-        MESA=OFF        
 
     # }
 

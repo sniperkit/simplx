@@ -1,5 +1,18 @@
 cmake_minimum_required(VERSION 3.0)
 
+string(COMPARE NOTEQUAL "$ENV{TRAVIS_TAG}" "" travis_deploy)
+string(COMPARE EQUAL "$ENV{APPVEYOR_REPO_TAG}" "true" appveyor_deploy)
+
+if(travis_deploy)
+  set(version "$ENV{TRAVIS_TAG}")
+elseif(appveyor_deploy)
+  set(version "$ENV{APPVEYOR_REPO_TAG_NAME}")
+else()
+  set(version "v0.1.0")
+endif()
+
+string(REGEX REPLACE "^v" "" version "${version}")
+
 include("cmake/HunterGate.cmake")
 
 HunterGate(
@@ -8,7 +21,11 @@ HunterGate(
   LOCAL
 )
 
-project(simplx VERSION 0.1.0)
+project(simplx VERSION ${version})
+
+# for additional cmake macros or functions
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/modules")
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 hunter_add_package(check_ci_tag)
 find_package(check_ci_tag CONFIG REQUIRED)
@@ -67,22 +84,6 @@ elseif (${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
 else ()
 	message (FATAL_ERROR "unsupported C++ compiler ${CMAKE_CXX_COMPILER_ID}")
 endif ()
-
-# set link dependencies
-function(trz_target_link_libraries test_name depedency)
-  target_link_libraries(${test_name} ${depedency} ${CMAKE_THREAD_LIBS_INIT} PRIVATE GTest::gtest_main)
-endfunction()
-
-########################
-##      UNIT TESTS
-########################
-# helper function
-# function to add a unit test. Must be defined BEFORE add_subdirectory()
-function(trz_add_test test_name source_file depedency)
-	add_executable(${test_name} ${source_file})
-	trz_target_link_libraries(${test_name} "${depedency}" )
-	add_test(${test_name} ${test_name})		# add_test(TEST_NAME CMAKE_REF)
-endfunction()
 
 #Gtest
 if(BUILD_TEST)
