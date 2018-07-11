@@ -1,2 +1,0 @@
-/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/rebuild_cache.dir
-/Users/lucmichalski/local/golang/src/github.com/sniperkit/simplx/_builds/libcxx/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/edit_cache.dir
